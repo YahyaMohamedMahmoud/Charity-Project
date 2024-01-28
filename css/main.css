@@ -1,0 +1,3141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.contanier {
+  width: 90%;
+  margin: auto;
+}
+.contanier1 {
+  width: 80%;
+  margin: auto;
+}
+li {
+  list-style: none;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+/* header start */
+.home {
+  height: 860px;
+  background-image: url(../img/h1_hero1.jpg.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pop {
+  width: 90%;
+  margin: auto;
+  padding: 5px 0;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px 0;
+  justify-content: space-between;
+}
+.texthome {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+.texthome1 a {
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 30px;
+  align-content: center;
+  color: white;
+  transition: all 0.4s;
+}
+.btn p {
+  padding: 20px 10px;
+  margin: 0 10px;
+  font-size: 17px;
+  font-weight: 300;
+  background-color: transparent;
+  color: white;
+  border: 1px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btns {
+  padding: 20px 40px;
+  font-size: 17px;
+  font-weight: 300;
+  background-color: #f15b43;
+  border: 2px solid #f15b43;
+  transition: all 0.5s;
+  color: white;
+  cursor: pointer;
+}
+.btns:hover {
+  background-color: transparent;
+  border: 2px solid white;
+}
+a:hover {
+  color: #20c997;
+}
+.col {
+  padding: 20px 0;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row2 {
+  width: 40%;
+  margin-top: 85px;
+}
+.row2 h1 {
+  font-size: 65px;
+  font-weight: 600;
+  padding-top: 85px;
+  line-height: 1.1;
+}
+.home .col .row2 p {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.bttn {
+  padding: 23px 40px;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  background-color: #65c9bb;
+  border: 1px solid #65c9bb;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.bttn:hover {
+  background-color: transparent;
+  border: 1px solid white;
+}
+/* header end */
+
+.up {
+  background-color: #fcf2eb;
+  padding-bottom: 30px;
+}
+.up .row6 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.up .upcol {
+  width: 55%;
+  padding: 20px 60px;
+}
+.up .upcol2 {
+  width: 45%;
+  padding: 20px 60px;
+}
+.up .upcol2 p {
+  padding: 10px 0;
+  color: #65c9bb;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.up .upcol2 h2 {
+  font-size: 45px;
+  font-weight: 500;
+  color: #263b5c;
+}
+.up .upcol2 .uptext p {
+  font-family: "Rubik", sans-serif;
+  color: #777;
+  padding-top: 20px;
+  font-weight: 400;
+  padding-bottom: 40px;
+  line-height: 1.5;
+  padding-right: 80px;
+}
+.now {
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 5px;
+  border: 2px solid #f15b43;
+  background-color: #f15b43;
+  color: white;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.view {
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: 300;
+  border: 2px solid #f15b43;
+  background-color: transparent;
+  color: #f15b43;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+.view::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #f15b43;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: -1;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+.view:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+.view:hover {
+  color: white;
+}
+.now:hover {
+  background-color: transparent;
+  color: #f15b43;
+}
+.us {
+  background-color: white;
+  padding-top: 50px;
+}
+.us .row3 {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  justify-content: space-between;
+}
+.us .row3 .uscol {
+  width: 45%;
+  padding: 20px 65px;
+}
+.us .row3 .uscol2 {
+  width: 50%;
+  padding: 20px 40px;
+  justify-content: center;
+}
+.us .uscol p {
+  padding: 10px 0;
+  color: #65c9bb;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.us .uscol h2 {
+  font-size: 45px;
+  font-weight: 500;
+  color: #263b5c;
+}
+.us .uscol .ustext p {
+  font-family: "Rubik", sans-serif;
+  color: #777;
+  padding-top: 20px;
+  font-weight: 400;
+  padding-bottom: 40px;
+  line-height: 1.5;
+}
+.help {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.help .row4 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.help .helpcol {
+  width: 32%;
+}
+.helpcard {
+  border: 1px solid transparent;
+  background-color: #6c757d19;
+  padding-bottom: 20px;
+}
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: #263b5c;
+}
+h3 a {
+  color: #263b5c;
+  transition: all 0.5s;
+}
+.helpcard img {
+  cursor: pointer;
+}
+.helpcard p {
+  font-size: 17px;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #777;
+  line-height: 1.5;
+}
+.helpcard .goal {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-top: 40px;
+  text-align: center;
+}
+.get {
+  font-family: "Jost", sans-serif;
+  padding: 15px 60px;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: #f15b43;
+  color: white;
+  border: 2px solid #f15b43;
+  transition: all 0.5s;
+}
+.helpcard .goal p {
+  line-height: 0;
+  padding-right: 25px;
+  font-size: 14px;
+}
+.helpcard .goal h4 {
+  color: #65c9bb;
+  font-size: 17px;
+  font-weight: 600;
+}
+.helpcard:hover a {
+  color: #f15b43;
+}
+.helpcard:hover .get {
+  background-color: transparent;
+  color: #f15b43;
+}
+.what {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+.what .whatrow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.what .whatcol {
+  width: 50%;
+  padding: 10px 40px;
+}
+.what .whatcol1 {
+  width: 40%;
+  margin-top: 50px;
+}
+.what .whatcol1 .coltext {
+  padding-top: 40px;
+  padding-right: 30px;
+}
+.what .whatcol1 .coltext p {
+  font-size: 17px;
+  font-weight: 300;
+  color: #20c997;
+}
+.what .whatcol1 .coltext h5 {
+  padding-top: 10px;
+  font-size: 50px;
+  font-weight: 500;
+  color: #263b5c;
+}
+.what .whatcol1 .coltext .coltext2 p {
+  font-size: 17px;
+  font-weight: 400;
+  padding-top: 20px;
+  line-height: 1.5;
+  padding-bottom: 40px;
+  color: #777;
+}
+.join {
+  font-family: "Rubik", sans-serif;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: white;
+  color: #f15b43;
+  border: 2px solid #f15b43;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+}
+.join::after {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background-color: #f15b43;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.join:hover::after {
+  opacity: 1;
+  width: 100%;
+  z-index: -1;
+}
+.join:hover {
+  color: white;
+  border: 2px solid #f15b43;
+}
+.how {
+  height: 550px;
+  background-image: url(../img/section-bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 50px;
+}
+.how .howtext {
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+}
+.how .howtext p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.how .howtext h4 {
+  font-size: 45px;
+  font-weight: 500;
+  padding-top: 8px;
+  margin-bottom: 50px;
+}
+.how .howrow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.how .howcol {
+  width: 30%;
+  padding: 0 15px;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+}
+.how .howcol span {
+  font-size: 35px;
+  padding: 30px 30px;
+  border-radius: 50%;
+  background-color: #2125292b;
+}
+.how .howcol h4 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.how .howcol p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 0 35px;
+}
+.new {
+  padding-top: 70px;
+  margin-bottom: 70px;
+}
+.new .newrow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 0 15px;
+  margin-top: 50px;
+}
+.new .newcol {
+  width: 20%;
+  padding-right: 40px;
+}
+.new .newimg {
+  width: 35%;
+  gap: 5px;
+}
+.new .newcol p {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  color: #20c997;
+}
+.new .newcol h4 {
+  font-size: 50px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+.newbt {
+  font-size: 15px;
+  padding: 24px 27px;
+  background-color: transparent;
+  border: 1px solid #d6d6d6;
+  color: #d6d6d6;
+  margin-right: 7px;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+.newbt::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #f15b43;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.newbt:hover::after {
+  opacity: 1;
+}
+.newbt:hover {
+  color: white;
+  border: 1px solid #f15b43;
+}
+.new .newcol2 {
+  border: 1px solid #6c757d19;
+  background-color: #6c757d19;
+  padding-bottom: 40px;
+}
+.new .newcol2 h4 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-size: 25px;
+  font-weight: 400;
+}
+.new .newcol2 p {
+  font-size: 16px;
+  padding: 10px 30px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #777;
+  margin-bottom: 20px;
+}
+.new .newcol2 a {
+  margin-left: 30px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  color: #f15b43;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid #f15b43;
+  transition: all 0.5s;
+}
+.link:hover a {
+  letter-spacing: 1px;
+}
+footer {
+  background-color: #263b5c;
+}
+footer .endrow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 80px;
+  border-bottom: 1px solid #7777775a;
+}
+footer .endcol {
+  width: 25%;
+  color: white;
+  margin-bottom: 80px;
+}
+footer .endcol img {
+  width: 55%;
+  padding-bottom: 20px;
+}
+footer .endcol p {
+  font-size: 15px;
+  font-family: 300;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  line-height: 1.8;
+}
+footer .endcol .link2 span {
+  font-size: 15px;
+  padding: 15px 17px;
+  text-decoration: none;
+  color: white;
+  background-color: #3b5998;
+  border: 1px solid transparent;
+}
+footer .endcol .link2 a .li {
+  background-color: #0077b5;
+}
+footer .endcol .link2 a .ins {
+  background-color: #405de6;
+}
+footer .endcol .link2 a .you {
+  background-color: #ff0000;
+}
+footer .endcol h6 {
+  padding-left: 60px;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+footer .endcol li {
+  padding-left: 60px;
+}
+footer .endcol li a {
+  color: white;
+  line-height: 2;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+footer .endcol .suptext p {
+  padding-left: 60px;
+}
+.join1 {
+  font-size: 16px;
+  margin-left: 60px;
+  padding: 18px 30px;
+  background-color: #f15b43;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  border: 2px solid #f15b43;
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.join1:hover {
+  background-color: transparent;
+  border: 2px solid white;
+}
+footer .copy {
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+footer .copy p {
+  font-size: 15px;
+  font-weight: 300;
+}
+footer .copy a {
+  text-decoration: none;
+  color: #20c997;
+}
+footer .copy span {
+  color: #20c997;
+}
+.home2 {
+  height: 400px;
+  background-image: url(../img/h2_hero1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.home2text h1 {
+  font-size: 50px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+.help .helppro {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.help .helppro p {
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom: 8px;
+  color: #20c997;
+}
+.help .helppro h4 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #263b5c;
+}
+.help .helpcol5 {
+  width: 50%;
+  padding: 15px 20px;
+}
+.help .helpcol5 .helpcard {
+  border: 1px solid transparent;
+  background-color: #6c757d19;
+  padding-bottom: 20px;
+}
+.pact {
+  margin-top: 70px;
+}
+.pact .pactrow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.pact .pactcol {
+  width: 65%;
+  background-color: white;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+.pact .pactrow .pactcol1 {
+  width: 35%;
+  padding: 10px 30px;
+}
+.pact .pactcol .pactcall {
+  margin-bottom: 40px;
+}
+.pact .pactcol:last-child {
+  margin-bottom: 70px;
+}
+
+.pact .pactrow .pactcol .pactcall h3 {
+  padding-top: 30px;
+  padding-bottom: 18px;
+  padding-left: 45px;
+}
+.pact .pactrow .pactcol h3:hover {
+  color: #20c997;
+}
+.pact .pactrow p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #777;
+  padding-bottom: 25px;
+  padding-left: 45px;
+  padding-right: 45px;
+  line-height: 1.8;
+}
+.tr a {
+  padding-left: 45px;
+  margin-right: 5px;
+  text-decoration: none;
+  color: #777;
+  font-size: 13px;
+}
+a:hover {
+  color: #20c997;
+}
+.pact .pactcol1 .search1 input {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px 21px;
+  border: 1px solid #77777755;
+  color: #777;
+}
+.pact .pactcol1 .search1 input:focus {
+  outline: none;
+}
+.pact .pactcol1 .search1 {
+  background-color: #fbf9ff;
+  padding: 15px 25px;
+  margin-bottom: 50px;
+}
+.pact .pactcol1 .search1 .Search {
+  padding: 15px 30px;
+  background-color: #20c997;
+  color: white;
+  border: 1px solid #20c997;
+}
+.det {
+  margin-top: 20px;
+  background-color: #fbf9ff;
+  padding: 20px 30px;
+}
+.det h5 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #7777771e;
+}
+.det ul {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 3.3;
+  margin-bottom: 46px;
+}
+.det ul li {
+  border-bottom: 1px solid #77777720;
+}
+.det ul li:last-child {
+  border: none;
+}
+.det ul li a {
+  color: #777;
+}
+.det ul li a:hover {
+  color: #20c997;
+}
+.pact .pactcol1 .post {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #fbf9ff;
+  padding: 10px 20px;
+}
+.pact .pactcol1 .post .postimg {
+  margin-bottom: 30px;
+}
+.pact .pactcol1 .post h6 {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #7777773f;
+  font-size: 25px;
+  font-weight: 400;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+.pact .pactcol1 .post .post2 a {
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 5px;
+  padding-right: 30px;
+  text-transform: capitalize;
+  display: block;
+  color: black;
+  margin-left: 40px;
+}
+.pact .pactcol1 .post .post2 a:hover {
+  color: #20c997;
+}
+.pact .pactcol1 .post .post2 p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #777;
+}
+.pact .pactcol1 .btr {
+  padding: 40px 20px;
+  background-color: #fbf9ff;
+  margin-bottom: 20px;
+}
+.pact .pactcol1 .btr h6 {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #7777773f;
+  font-size: 25px;
+  font-weight: 400;
+  padding-right: 80px;
+  padding-bottom: 20px;
+}
+.pact .pactcol1 .btr a {
+  font-size: 12px;
+  border: 1px solid #7777771d;
+  padding: 10px 20px;
+  color: #777;
+  background-color: white;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 7px;
+  transition: all 0.5s;
+}
+.pact .pactcol1 .btr a:hover {
+  background-color: #20c997;
+  color: white;
+}
+.pact .pactcol1 .psot {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 5px 10px;
+  gap: 15px;
+}
+.pact .pactcol1 .trt .post {
+  margin-top: 20px;
+}
+.pact .pactcol1 .form {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 20px;
+}
+.form input {
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 15px 10px;
+  border: 1px solid #77777755;
+  color: #777;
+  background-color: #fbf9ff;
+}
+.form input:focus {
+  outline: none;
+}
+.pact .pactcol1 .form {
+  background-color: #fbf9ff;
+  flex-direction: column;
+}
+.pact .pactcol1 .form h6 {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #7777773f;
+  font-size: 25px;
+  font-weight: 400;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+.pact .pactcol1 .form .Search2 {
+  font-size: 15px;
+  padding: 20px 20px;
+  background-color: transparent;
+  color: #20c997;
+  border: 1px solid #20c997;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.pact .pactcol1 .form .Search2:hover {
+  background-color: #20c997;
+  color: white;
+}
+.pact .pactcol .pactphoto {
+  position: relative;
+}
+.pact .pactcol .pactbtn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 50px;
+  padding: 30px 0px;
+  margin-bottom: -20px;
+  font-size: 30px;
+  color: white;
+  background-color: #65c9bb;
+  border: 1px solid #20c997;
+  border-radius: 10px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.pact .pactcol .pactbtn:hover {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #20c997;
+}
+.pact .pactcol .pactphoto h4 {
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+.pact .pactcol .boot p {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 4px;
+}
+.pact .pactcol .plac {
+  padding: 20px;
+  background-color: rgba(130, 139, 178, 0.1);
+}
+.pact .pactcol .plac1 p {
+  background-color: white;
+  padding: 20px 40px;
+  margin-top: 10px;
+  line-height: 2.8;
+  font-style: italic;
+  border-left: 3px solid #777;
+}
+.pact .pactcol .likerow {
+  border-top: 1px solid #77777770;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.pact .pactcol .likerow .likecol p {
+  font-size: 14px;
+  padding-left: 5px;
+}
+.pact .pactcol .likerow .likecol span {
+  margin-right: 5px;
+}
+.pact .pactcol .likerow .likecol1 .click a {
+  padding: 0 8px;
+}
+.pact .pactcol .likerow1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #77777765;
+}
+.pact .pactcol .likerow1 .likecol3 {
+  display: flex;
+}
+.pact .pactcol .likerow1 .likecol3 .photo {
+  position: relative;
+}
+.pact .pactcol .likerow1 .likecol3 h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 40px;
+}
+.pact .pactcol .likerow1 .likecol3 p {
+  font-size: 15px;
+  padding-top: 5px;
+}
+.pact .pactcol .likerow1 .likecol3 .photo .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.637);
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.pact .pactcol .likerow1 .likecol3 .photo .overlay span {
+  position: relative;
+  top: 30%;
+  right: 10%;
+}
+.pact .pactcol .likerow1 .likecol3 .photo .overlay span a {
+  font-size: 30px;
+}
+.pact .pactcol .likerow1 .likecol3:hover .overlay {
+  opacity: 1;
+}
+.pact .pactcol .likerow1 .likecol3:hover h6 {
+  color: #20c997;
+}
+.pact .pactcol .have {
+  background-color: #77777710;
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.pact .pactcol .outrow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 0px 20px;
+}
+.pact .pactcol .have .outrow .outtext {
+  padding-bottom: 30px;
+}
+.pact .pactcol .outrow h3 {
+  font-size: 19px;
+  cursor: pointer;
+}
+.pact .pactcol .outrow p {
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+.pact .pactcol .outrow .outimg {
+  padding-top: 50px;
+}
+.pact .pactcol .have2 .have2text {
+  border-top: 1px solid #77777765;
+}
+.pact .pactcol .have2 .have2text h4 {
+  font-size: 20px;
+  margin-left: 30px;
+}
+.pact .pactcol .have2 {
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.pact .pactcol .have2 .outtext2 {
+  margin-top: 50px;
+}
+.pact .pactcol .have2 .outtext2 p {
+  font-size: 14px;
+  padding-bottom: 4px;
+  align-items: center;
+}
+.pact .pactcol .have2 .outtext2 h3 {
+  font-size: 17px;
+  padding-top: 10px;
+}
+.pact .pactcol .have2 .outtext2 .outimg {
+  margin-left: 5px;
+}
+.pact .pactcol .have2 .outtext5 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.pact .pactcol .have2 .outtext5 {
+  align-items: center;
+}
+.pact .pactcol .leavetext {
+  border-top: 1px solid #77777741;
+}
+.pact .pactcol .leavetext h4 {
+  font-size: 20px;
+  margin-left: 30px;
+  padding-top: 30px;
+}
+form {
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+form textarea {
+  padding: 15px 10px;
+  border: 1px solid #77777731;
+  font-family: "Jost", sans-serif;
+}
+textarea:focus {
+  outline: none;
+}
+form input {
+  width: 48%;
+  padding: 20px 20px;
+  margin-top: 20px;
+  border: 1px solid #7777772f;
+  margin-right: 10px;
+}
+form input:focus {
+  outline: none;
+}
+form .web input {
+  width: 97.8%;
+  margin: 20px 0;
+}
+form .com {
+  margin: 20px 0;
+  padding: 20px 50px;
+  font-size: 14px;
+  background-color: white;
+  color: #20c997;
+  border: 1px solid #20c997;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+form .com:hover {
+  background-color: #20c997;
+  color: white;
+}
+.map {
+  margin-top: 80px;
+}
+.touch .tectext {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+.touch .touchrow {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 20px;
+}
+.touch .touchrow .touchcol {
+  width: 70%;
+  padding-right: 50px;
+}
+.touch .touchrow .touchcol1 {
+  width: 25%;
+  padding-left: 30px;
+}
+.touch .touchrow .touchcol1 .media {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px 0;
+}
+.touch .touchrow .touchcol1 .media .media1 ul {
+  padding-bottom: 30px;
+}
+.touch .touchrow .touchcol1 .media .media1 ul span {
+  font-size: 40px;
+  margin-right: 25px;
+  color: #777;
+}
+.touch .touchrow .touchcol1 .media .media1 ul h6 {
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+}
+.touch .touchrow .touchcol1 .media .media1 ul p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #777;
+  padding-left: 40px;
+  margin-left: 20px;
+}
+.touch .touchrow .touchcol1 .media .media1 ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+@media screen and (max-width: 1024px) {
+  .home {
+    height: 700px;
+    background-image: url(../img/h1_hero1.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .texthome {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+  .texthome1 a {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .btn p {
+    display: none;
+  }
+  .btns {
+    padding: 15px 20px;
+    font-size: 15px;
+  }
+  .row2 {
+    width: 60%;
+    margin-top: 10px;
+  }
+  .row2 h1 {
+    font-size: 60px;
+    padding-top: 40px;
+  }
+  .home .col .row2 p {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .up .upcol {
+    width: 55%;
+    margin-top: 20px;
+    padding: 0px 0px;
+  }
+  .up .upcol2 {
+    width: 40%;
+    padding: 0px 0px;
+  }
+  .up .upcol2 p {
+    padding: 10px 0;
+    font-size: 20px;
+  }
+  .up .upcol2 h2 {
+    font-size: 40px;
+  }
+  .up .upcol2 .uptext p {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    line-height: 1.7;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+  .now {
+    margin-bottom: 10px;
+    padding: 20px 30px;
+    font-size: 17px;
+  }
+  .view {
+    padding: 20px 30px;
+    font-size: 17px;
+  }
+  .us {
+    padding-top: 5px;
+  }
+  .us .row3 .uscol {
+    width: 50%;
+    padding: 5px 0px;
+  }
+  .us .row3 .uscol2 {
+    width: 50%;
+    padding: 20px 0px;
+  }
+  .us .uscol p {
+    padding: 5px 0;
+    font-size: 17px;
+  }
+  .us .uscol h2 {
+    font-size: 40px;
+  }
+  .us .uscol .ustext p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .help .helpcol {
+    width: 33.33%;
+    margin-bottom: 20px;
+    padding-right: 10px;
+  }
+  .get {
+    padding: 15px 30px;
+  }
+  .helpcard .goal p {
+    line-height: 0;
+    padding-right: 20px;
+    font-size: 14px;
+  }
+  .helpcard p {
+    font-size: 17px;
+    padding-left: 15px;
+    line-height: 1.8;
+  }
+  h3 {
+    padding-left: 15px;
+  }
+  .what {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .what .whatcol {
+    width: 50%;
+    padding: 10px 0px;
+  }
+  .what .whatcol1 {
+    width: 40%;
+    margin-top: 10px;
+  }
+  .what .whatcol1 .coltext {
+    padding-top: 10px;
+    padding-right: 15px;
+  }
+  .what .whatcol1 .coltext p {
+    font-size: 17px;
+  }
+  .what .whatcol1 .coltext h5 {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .what .whatcol1 .coltext .coltext2 p {
+    font-size: 15px;
+    line-height: 1.7;
+    padding-bottom: 40px;
+  }
+  .join {
+    padding: 20px 30px;
+    margin-bottom: 30px;
+  }
+  .how {
+    height: 500px;
+    background-image: url(../img/section-bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+  }
+  .how .howtext {
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+  }
+  .how .howtext p {
+    font-size: 14px;
+  }
+  .how .howtext h4 {
+    font-size: 30px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .how .howcol {
+    width: 33.33%;
+    padding: 0 0px;
+    margin-top: 50px;
+  }
+  .how .howcol span {
+    font-size: 35px;
+    padding: 30px 30px;
+  }
+  .how .howcol h4 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+  .how .howcol p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+  .new .newimg {
+    width: 50%;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+  .new {
+    padding-top: 20px;
+    margin-bottom: 70px;
+  }
+  .new .newrow {
+    padding: 10px 0px;
+    margin-top: 20px;
+  }
+  .new .newcol {
+    width: 100%;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+  .new .newcol p {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .new .newcol h4 {
+    font-size: 35px;
+    padding-bottom: 30px;
+  }
+  .newbt {
+    display: none;
+  }
+  .new .newcol2 h4 {
+    padding-left: 10px;
+    font-size: 25px;
+  }
+  .new .newcol2 p {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+  .new .newcol2 a {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .map {
+    width: 100%;
+    margin-top: 10px;
+  }
+  footer .endcol {
+    width: 33.33%;
+    color: white;
+    margin-bottom: 60px;
+  }
+  footer .endcol h6 {
+    padding-left: 40px;
+  }
+  footer .endcol li {
+    padding-left: 40px;
+  }
+  footer .endcol .suptext p {
+    padding-left: 40px;
+  }
+  .join1 {
+    font-size: 16px;
+    margin-left: 40px;
+    padding: 15px 30px;
+  }
+  .home2 {
+    height: 300px;
+  }
+  .home2text h1 {
+    font-size: 40px;
+  }
+  .help .helpcol5 {
+    width: 50%;
+    padding: 10px 5px;
+  }
+  .help .helppro {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .help .helppro p {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+  .help .helppro h4 {
+    font-size: 40px;
+  }
+  .helpcard h3 {
+    font-size: 20px;
+  }
+  .pact .pactrow {
+    padding: 10px 0px;
+  }
+  .pact .pactcol {
+    width: 60%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .pact .pactrow .pactcol1 {
+    width: 40%;
+    padding: 10px 20px;
+  }
+  .pact .pactrow .pactcol .pactcall h3 {
+    padding-top: 30px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+    font-size: 25px;
+  }
+  .pact .pactrow p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 10px;
+    line-height: 1.5;
+  }
+  .tr a {
+    padding-left: 15px;
+    margin-right: 0px;
+    font-size: 13px;
+  }
+  .pact .pactcol .pactbtn {
+    margin-left: 10px;
+    padding: 20px 5px;
+    font-size: 15px;
+  }
+  .pact .pactcol1 .search1 input {
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    padding: 15px 5px;
+  }
+  .pact .pactcol1 .search1 {
+    padding: 15px 0px;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol1 .search1 .Search {
+    padding: 15px 19px;
+  }
+  .det {
+    margin-top: 10px;
+    padding: 20px 0px;
+  }
+  .det h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+  }
+  .det ul {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 3.3;
+    margin-bottom: 30px;
+    margin-left: 15px;
+  }
+  .pact .pactcol1 .post {
+    padding: 10px 0px;
+  }
+  .pact .pactcol1 .post .postimg {
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  .pact .pactcol1 .post h6 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    margin-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  .pact .pactcol1 .post .post2 a {
+    padding-right: 0px;
+    margin-left: 10px;
+  }
+  .pact .pactcol1 .btr {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+  }
+  .pact .pactcol1 .btr a {
+    font-size: 12px;
+    padding: 10px 10px;
+    margin-left: 8px;
+  }
+  .pact .pactcol1 .psot .postimg {
+    width: 25%;
+  }
+  .pact .pactcol1 .psot {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 5px 0px;
+  }
+  .pact .pactcol h4 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+  .pact .pactcol .plac1 p {
+    padding: 20px 10px;
+    margin-top: 10px;
+    line-height: 1.8;
+  }
+  .pact .pactcol .pactphoto .tr a {
+    margin-left: 5px;
+  }
+  .pact .pactcol .likerow {
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol .likerow1 {
+    padding-bottom: 40px;
+  }
+  .pact .pactcol .likerow1 .likecol3 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  .pact .pactcol .likerow1 .likecol3 .photo {
+    position: relative;
+  }
+  .pact .pactcol .likerow1 .likecol3 h6 {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .pact .pactcol .have {
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol .outrow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+  .pact .pactcol .have .outrow .outtext {
+    padding-top: 10px;
+  }
+  .pact .pactcol .outrow h3 {
+    font-size: 12px;
+    cursor: pointer;
+    padding-bottom: 10px;
+  }
+  .pact .pactcol .outrow p {
+    padding-bottom: 10px;
+    font-size: 9px;
+  }
+  .pact .pactcol .outrow .outimg {
+    padding-top: 50px;
+  }
+  .pact .pactcol .have2 .outtext2 p {
+    font-size: 9px;
+  }
+  .pact .pactcol .have2 .outtext5 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  form textarea {
+    width: 97%;
+  }
+  form input {
+    width: 47%;
+    padding: 15px 10px;
+  }
+  form .web input {
+    width: 97%;
+    margin: 20px 0;
+  }
+  form {
+    margin-left: 5px;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol .leavetext h4 {
+    margin-left: 5px;
+  }
+  .touch .touchrow {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 0px;
+  }
+  .touch .touchrow .touchcol {
+    width: 70%;
+    padding-right: 5px;
+  }
+  .touch .touchrow .touchcol1 {
+    width: 30%;
+    padding-left: 5px;
+  }
+  .touch .touchrow .touchcol1 .media {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 0;
+  }
+  .touch .touchrow .touchcol1 .media .media1 ul span {
+    font-size: 25px;
+  }
+  .touch .touchrow .touchcol1 .media .media1 ul h6 {
+    font-size: 17px;
+  }
+  .touch .touchrow .touchcol1 .media .media1 ul p {
+    font-size: 14px;
+  }
+  .touch .tectext {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .home {
+    height: 700px;
+    background-image: url(../img/h1_hero1.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .texthome {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+  .texthome1 a {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  .btn p {
+    display: none;
+  }
+  .btns {
+    padding: 15px 20px;
+    font-size: 15px;
+  }
+  .row2 {
+    width: 60%;
+    margin-top: 10px;
+  }
+  .row2 h1 {
+    font-size: 60px;
+    padding-top: 40px;
+  }
+  .home .col .row2 p {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .up .upcol {
+    width: 55%;
+    margin-top: 20px;
+    padding: 0px 0px;
+  }
+  .up .upcol2 {
+    width: 40%;
+    padding: 0px 0px;
+  }
+  .up .upcol2 p {
+    padding: 10px 0;
+    font-size: 20px;
+  }
+  .up .upcol2 h2 {
+    font-size: 40px;
+  }
+  .up .upcol2 .uptext p {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    line-height: 1.7;
+    padding-right: 10px;
+    font-size: 18px;
+  }
+  .now {
+    margin-bottom: 10px;
+    padding: 20px 30px;
+    font-size: 17px;
+  }
+  .view {
+    padding: 20px 30px;
+    font-size: 17px;
+  }
+  .us {
+    padding-top: 5px;
+  }
+  .us .row3 .uscol {
+    width: 50%;
+    padding: 5px 0px;
+  }
+  .us .row3 .uscol2 {
+    width: 50%;
+    padding: 20px 0px;
+  }
+  .us .uscol p {
+    padding: 5px 0;
+    font-size: 17px;
+  }
+  .us .uscol h2 {
+    font-size: 40px;
+  }
+  .us .uscol .ustext p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .help .helpcol {
+    width: 33.33%;
+    margin-bottom: 20px;
+    padding-right: 10px;
+  }
+  .get {
+    padding: 15px 30px;
+  }
+  .helpcard .goal p {
+    line-height: 0;
+    padding-right: 20px;
+    font-size: 14px;
+  }
+  .helpcard p {
+    font-size: 17px;
+    padding-left: 15px;
+    line-height: 1.8;
+  }
+  h3 {
+    padding-left: 15px;
+  }
+  .what {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .what .whatcol {
+    width: 50%;
+    padding: 10px 0px;
+  }
+  .what .whatcol1 {
+    width: 40%;
+    margin-top: 10px;
+  }
+  .what .whatcol1 .coltext {
+    padding-top: 10px;
+    padding-right: 15px;
+  }
+  .what .whatcol1 .coltext p {
+    font-size: 17px;
+  }
+  .what .whatcol1 .coltext h5 {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .what .whatcol1 .coltext .coltext2 p {
+    font-size: 15px;
+    line-height: 1.7;
+    padding-bottom: 40px;
+  }
+  .join {
+    padding: 20px 30px;
+    margin-bottom: 30px;
+  }
+  .how {
+    height: 500px;
+    background-image: url(../img/section-bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+  }
+  .how .howtext {
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+  }
+  .how .howtext p {
+    font-size: 14px;
+  }
+  .how .howtext h4 {
+    font-size: 30px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .how .howcol {
+    width: 33.33%;
+    padding: 0 0px;
+    margin-top: 50px;
+  }
+  .how .howcol span {
+    font-size: 35px;
+    padding: 30px 30px;
+  }
+  .how .howcol h4 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+  .how .howcol p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+  .new .newimg {
+    width: 50%;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+  .new {
+    padding-top: 20px;
+    margin-bottom: 70px;
+  }
+  .new .newrow {
+    padding: 10px 0px;
+    margin-top: 20px;
+  }
+  .new .newcol {
+    width: 100%;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+  .new .newcol p {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .new .newcol h4 {
+    font-size: 35px;
+    padding-bottom: 30px;
+  }
+  .newbt {
+    display: none;
+  }
+  .new .newcol2 h4 {
+    padding-left: 10px;
+    font-size: 25px;
+  }
+  .new .newcol2 p {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+  .new .newcol2 a {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .map {
+    width: 100%;
+    margin-top: 10px;
+  }
+  footer .endcol {
+    width: 33.33%;
+    color: white;
+    margin-bottom: 60px;
+  }
+  footer .endcol h6 {
+    padding-left: 40px;
+  }
+  footer .endcol li {
+    padding-left: 40px;
+  }
+  footer .endcol .suptext p {
+    padding-left: 40px;
+  }
+  .join1 {
+    font-size: 16px;
+    margin-left: 40px;
+    padding: 15px 30px;
+  }
+  .home2 {
+    height: 300px;
+  }
+  .home2text h1 {
+    font-size: 40px;
+  }
+  .help .helpcol5 {
+    width: 50%;
+    padding: 10px 5px;
+  }
+  .help .helppro {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .help .helppro p {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+  .help .helppro h4 {
+    font-size: 40px;
+  }
+  .helpcard h3 {
+    font-size: 20px;
+  }
+  .pact .pactrow {
+    padding: 10px 0px;
+  }
+  .pact .pactcol {
+    width: 60%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .pact .pactrow .pactcol1 {
+    width: 40%;
+    padding: 10px 20px;
+  }
+  .pact .pactrow .pactcol .pactcall h3 {
+    padding-top: 30px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+    font-size: 25px;
+  }
+  .pact .pactrow p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 10px;
+    line-height: 1.5;
+  }
+  .tr a {
+    padding-left: 15px;
+    margin-right: 0px;
+    font-size: 13px;
+  }
+  .pact .pactcol .pactbtn {
+    margin-left: 10px;
+    padding: 20px 5px;
+    font-size: 15px;
+  }
+  .pact .pactcol1 .search1 input {
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    padding: 15px 5px;
+  }
+  .pact .pactcol1 .search1 {
+    padding: 15px 0px;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol1 .search1 .Search {
+    padding: 15px 19px;
+  }
+  .det {
+    margin-top: 10px;
+    padding: 20px 0px;
+  }
+  .det h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+  }
+  .det ul {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 3.3;
+    margin-bottom: 30px;
+    margin-left: 15px;
+  }
+  .pact .pactcol1 .post {
+    padding: 10px 0px;
+  }
+  .pact .pactcol1 .post .postimg {
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  .pact .pactcol1 .post h6 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    margin-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  .pact .pactcol1 .post .post2 a {
+    padding-right: 0px;
+    margin-left: 10px;
+  }
+  .pact .pactcol1 .btr {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+  }
+  .pact .pactcol1 .btr a {
+    font-size: 12px;
+    padding: 10px 10px;
+    margin-left: 8px;
+  }
+  .pact .pactcol1 .psot .postimg {
+    width: 25%;
+  }
+  .pact .pactcol1 .psot {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 5px 0px;
+  }
+  .pact .pactcol h4 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+  .pact .pactcol .plac1 p {
+    padding: 20px 10px;
+    margin-top: 10px;
+    line-height: 1.8;
+  }
+  .pact .pactcol .pactphoto .tr a {
+    margin-left: 5px;
+  }
+  .pact .pactcol .likerow {
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol .likerow1 {
+    padding-bottom: 40px;
+  }
+  .pact .pactcol .likerow1 .likecol3 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  .pact .pactcol .likerow1 .likecol3 .photo {
+    position: relative;
+  }
+  .pact .pactcol .likerow1 .likecol3 h6 {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .pact .pactcol .have {
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol .outrow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+  .pact .pactcol .have .outrow .outtext {
+    padding-top: 10px;
+  }
+  .pact .pactcol .outrow h3 {
+    font-size: 12px;
+    cursor: pointer;
+    padding-bottom: 10px;
+  }
+  .pact .pactcol .outrow p {
+    padding-bottom: 10px;
+    font-size: 9px;
+  }
+  .pact .pactcol .outrow .outimg {
+    padding-top: 50px;
+  }
+  .pact .pactcol .have2 .outtext2 p {
+    font-size: 9px;
+  }
+  .pact .pactcol .have2 .outtext5 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  form textarea {
+    width: 97%;
+  }
+  form input {
+    width: 47%;
+    padding: 15px 10px;
+  }
+  form .web input {
+    width: 97%;
+    margin: 20px 0;
+  }
+  form {
+    margin-left: 5px;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol .leavetext h4 {
+    margin-left: 5px;
+  }
+  .touch .touchrow {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 0px;
+  }
+  .touch .touchrow .touchcol {
+    width: 70%;
+    padding-right: 5px;
+  }
+  .touch .touchrow .touchcol1 {
+    width: 30%;
+    padding-left: 5px;
+  }
+  .touch .touchrow .touchcol1 .media {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 0;
+  }
+  .touch .touchrow .touchcol1 .media .media1 ul span {
+    font-size: 25px;
+  }
+  .touch .touchrow .touchcol1 .media .media1 ul h6 {
+    font-size: 17px;
+  }
+  .touch .touchrow .touchcol1 .media .media1 ul p {
+    font-size: 14px;
+  }
+  .touch .tectext {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home {
+    height: 500px;
+    background-image: url(../img/h1_hero1.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .texthome1 a {
+    display: none;
+  }
+  .btn,
+  .btns {
+    display: none;
+  }
+  .row2 {
+    width: 70%;
+    margin-top: 10px;
+  }
+  .row2 h1 {
+    font-size: 40px;
+    padding-top: 40px;
+  }
+  .home .col .row2 p {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .up .upcol {
+    width: 50%;
+    padding: 6px 0px;
+  }
+  .up .upcol2 {
+    width: 40%;
+    padding: 0px 0px;
+  }
+  .up .upcol2 p {
+    padding: 10px 0;
+    font-size: 17px;
+  }
+  .up .upcol2 h2 {
+    font-size: 25px;
+  }
+  .up .upcol2 .uptext p {
+    padding-top: 5px;
+    padding-bottom: 40px;
+    line-height: 1.7;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+  .now {
+    margin-bottom: 10px;
+    padding: 18px 15px;
+    font-size: 15px;
+  }
+  .view {
+    padding: 18px 15px;
+    font-size: 15px;
+  }
+  .us {
+    padding-top: 5px;
+  }
+  .us .row3 .uscol {
+    width: 50%;
+    padding: 5px 0px;
+  }
+  .us .row3 .uscol2 {
+    width: 50%;
+    padding: 20px 0px;
+  }
+  .us .uscol p {
+    padding: 5px 0;
+    font-size: 16px;
+  }
+  .us .uscol h2 {
+    font-size: 30px;
+  }
+  .us .uscol .ustext p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .help .helpcol {
+    width: 50%;
+    margin-bottom: 20px;
+    padding-right: 10px;
+  }
+  .get {
+    padding: 15px 30px;
+  }
+  .helpcard .goal p {
+    line-height: 0;
+    padding-right: 20px;
+    font-size: 14px;
+  }
+  .helpcard p {
+    font-size: 17px;
+    padding-left: 15px;
+    line-height: 1.8;
+  }
+  h3 {
+    padding-left: 15px;
+  }
+  .what {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .what .whatcol {
+    width: 50%;
+    padding: 10px 0px;
+  }
+  .what .whatcol1 {
+    width: 40%;
+    margin-top: 10px;
+  }
+  .what .whatcol1 .coltext {
+    padding-top: 10px;
+    padding-right: 15px;
+  }
+  .what .whatcol1 .coltext p {
+    font-size: 17px;
+  }
+  .what .whatcol1 .coltext h5 {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .what .whatcol1 .coltext .coltext2 p {
+    font-size: 15px;
+    line-height: 1.7;
+    padding-bottom: 40px;
+  }
+  .join {
+    padding: 20px 30px;
+    margin-bottom: 30px;
+  }
+  .how {
+    height: 500px;
+    background-image: url(../img/section-bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+  }
+  .how .howtext {
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+  }
+  .how .howtext p {
+    font-size: 14px;
+  }
+  .how .howtext h4 {
+    font-size: 30px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .how .howcol {
+    width: 33.33%;
+    padding: 0 0px;
+    margin-top: 50px;
+  }
+  .how .howcol span {
+    font-size: 35px;
+    padding: 30px 30px;
+  }
+  .how .howcol h4 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+  .how .howcol p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+  .new .newimg {
+    width: 50%;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+  .new {
+    padding-top: 20px;
+    margin-bottom: 70px;
+  }
+  .new .newrow {
+    padding: 10px 0px;
+    margin-top: 20px;
+  }
+  .new .newcol {
+    width: 100%;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+  .new .newcol p {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .new .newcol h4 {
+    font-size: 35px;
+    padding-bottom: 30px;
+  }
+  .newbt {
+    display: none;
+  }
+  .new .newcol2 h4 {
+    padding-left: 10px;
+    font-size: 25px;
+  }
+  .new .newcol2 p {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+  .new .newcol2 a {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .map {
+    width: 100%;
+    margin-top: 10px;
+  }
+  footer .endcol {
+    width: 50%;
+    color: white;
+    margin-bottom: 60px;
+  }
+  footer .endcol h6 {
+    padding-left: 20px;
+  }
+  footer .endcol li {
+    padding-left: 20px;
+  }
+  footer .endcol .suptext p {
+    padding-left: 20px;
+  }
+  .join1 {
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 15px 30px;
+  }
+  .home2 {
+    height: 300px;
+  }
+  .home2text h1 {
+    font-size: 40px;
+  }
+  .help .helpcol5 {
+    width: 50%;
+    padding: 10px 5px;
+  }
+  .help .helppro {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .help .helppro p {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+  .help .helppro h4 {
+    font-size: 40px;
+  }
+  .helpcard h3 {
+    font-size: 20px;
+  }
+  .pact .pactrow {
+    padding: 10px 0px;
+  }
+  .pact .pactcol {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .pact .pactrow .pactcol1 {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .pact .pactrow .pactcol .pactcall h3 {
+    padding-top: 30px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+    font-size: 18px;
+  }
+  .pact .pactrow p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 10px;
+    line-height: 1.5;
+  }
+  .tr a {
+    padding-left: 15px;
+    margin-right: 0px;
+    font-size: 13px;
+  }
+  .pact .pactcol .pactbtn {
+    margin-left: 10px;
+    padding: 20px 5px;
+    font-size: 15px;
+  }
+  .pact .pactcol1 .search1 input {
+    width: 85%;
+    margin-left: 0px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+  }
+  .pact .pactcol1 .search1 {
+    padding: 15px 10px;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol1 .search1 .Search {
+    padding: 15px 19px;
+  }
+  .det {
+    margin-top: 10px;
+    padding: 20px 0px;
+  }
+  .det h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+  }
+  .det ul {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 3.3;
+    margin-bottom: 30px;
+    margin-left: 15px;
+  }
+  .pact .pactcol1 .post {
+    padding: 10px 0px;
+  }
+  .pact .pactcol1 .post .postimg {
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  .pact .pactcol1 .post h6 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    margin-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  .pact .pactcol1 .post .post2 a {
+    padding-right: 0px;
+    margin-left: 10px;
+  }
+  .pact .pactcol1 .btr {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+  }
+  .pact .pactcol1 .btr a {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-left: 8px;
+  }
+  .pact .pactcol1 .psot .postimg {
+    width: 25%;
+  }
+  .pact .pactcol1 .psot {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 5px 5px;
+  }
+  .pact .pactcol h4 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+  .pact .pactcol .plac1 p {
+    padding: 20px 10px;
+    margin-top: 10px;
+    line-height: 1.8;
+  }
+  .pact .pactcol .pactphoto .tr a {
+    margin-left: 5px;
+  }
+  .pact .pactcol .likerow {
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol .likerow1 {
+    padding-bottom: 40px;
+  }
+  .pact .pactcol .likerow1 .likecol3 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  .pact .pactcol .likerow1 .likecol3 .photo {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .pact .pactcol .likerow1 .likecol3 h6 {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .pact .pactcol .have {
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol .outrow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+  .pact .pactcol .have .outrow .outtext {
+    padding-bottom: 30px;
+  }
+  .pact .pactcol .outrow h3 {
+    font-size: 17px;
+    cursor: pointer;
+  }
+  .pact .pactcol .outrow p {
+    padding-bottom: 5px;
+    font-size: 12px;
+  }
+  .pact .pactcol .outrow .outimg {
+    padding-top: 5px;
+  }
+  .pact .pactcol .have2 .outtext2 {
+    margin-top: 20px;
+  }
+  .pact .pactcol .have2 .outtext2 p {
+    font-size: 12px;
+  }
+  .pact .pactcol .have2 .outtext5 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  form textarea {
+    width: 100%;
+  }
+  form input {
+    width: 47%;
+    padding: 15px 10px;
+  }
+  form .web input {
+    width: 100%;
+    margin: 20px 0;
+  }
+  form {
+    margin-left: 5px;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol .leavetext h4 {
+    margin-left: 5px;
+  }
+  .touch .touchrow {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px 0px;
+  }
+  .touch .touchrow .touchcol {
+    width: 100%;
+    padding-right: 5px;
+  }
+  .touch .touchrow .touchcol1 {
+    width: 50%;
+    padding-left: 5px;
+  }
+  .touch .touchrow .touchcol1 .media {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 0;
+  }
+  .touch .touchrow .touchcol1 .media .media1 ul span {
+    font-size: 25px;
+  }
+  .touch .touchrow .touchcol1 .media .media1 ul h6 {
+    font-size: 17px;
+  }
+  .touch .touchrow .touchcol1 .media .media1 ul p {
+    font-size: 14px;
+  }
+  .touch .tectext {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home {
+    height: 500px;
+    background-image: url(../img/h1_hero1.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .texthome1 a {
+    display: none;
+  }
+  .btn,
+  .btns {
+    display: none;
+  }
+  .row2 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .row2 h1 {
+    font-size: 30px;
+    padding-top: 40px;
+  }
+  .home .col .row2 p {
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .up .upcol {
+    width: 100%;
+    padding: 6px 0px;
+  }
+  .up .upcol2 {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .up .upcol2 p {
+    padding: 10px 0;
+    font-size: 15px;
+  }
+  .up .upcol2 h2 {
+    font-size: 25px;
+  }
+  .up .upcol2 .uptext p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    line-height: 1.5;
+    padding-right: 0px;
+    font-size: 17px;
+  }
+  .now {
+    margin-bottom: 10px;
+    padding: 20px 30px;
+  }
+  .view {
+    padding: 20px 30px;
+  }
+  .us {
+    padding-top: 5px;
+  }
+  .us .row3 .uscol {
+    width: 100%;
+    padding: 5px 0px;
+  }
+  .us .row3 .uscol2 {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .us .uscol p {
+    padding: 5px 0;
+    font-size: 16px;
+  }
+  .us .uscol h2 {
+    font-size: 30px;
+  }
+  .us .uscol .ustext p {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .help .helpcol {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .get {
+    padding: 15px 30px;
+  }
+  .helpcard .goal p {
+    line-height: 0;
+    padding-right: 20px;
+    font-size: 14px;
+  }
+  .helpcard p {
+    font-size: 17px;
+    padding-left: 15px;
+    line-height: 1.8;
+  }
+  h3 {
+    padding-left: 15px;
+  }
+  .what {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .what .whatcol {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .what .whatcol1 {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .what .whatcol1 .coltext {
+    padding-top: 10px;
+    padding-right: 15px;
+  }
+  .what .whatcol1 .coltext p {
+    font-size: 17px;
+  }
+  .what .whatcol1 .coltext h5 {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .what .whatcol1 .coltext .coltext2 p {
+    font-size: 15px;
+    line-height: 1.7;
+    padding-bottom: 40px;
+  }
+  .join {
+    padding: 20px 30px;
+    margin-bottom: 30px;
+  }
+  .how {
+    height: 1000px;
+    background-image: url(../img/section-bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+  }
+  .how .howtext {
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+  }
+  .how .howtext p {
+    font-size: 14px;
+  }
+  .how .howtext h4 {
+    font-size: 30px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .how .howcol {
+    width: 100%;
+    padding: 0 0px;
+    margin-top: 50px;
+  }
+  .how .howcol span {
+    font-size: 35px;
+    padding: 30px 30px;
+  }
+  .how .howcol h4 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+  .how .howcol p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+  .new .newimg {
+    width: 100%;
+    gap: 0px;
+    margin-bottom: 20px;
+  }
+  .new {
+    padding-top: 20px;
+    margin-bottom: 70px;
+  }
+  .new .newrow {
+    padding: 10px 0px;
+    margin-top: 20px;
+  }
+  .new .newcol {
+    width: 100%;
+    padding-right: 10px;
+    margin-bottom: 20px;
+  }
+  .new .newcol p {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .new .newcol h4 {
+    font-size: 35px;
+    padding-bottom: 30px;
+  }
+  .newbt {
+    display: none;
+  }
+  .new .newcol2 h4 {
+    padding-left: 10px;
+    font-size: 25px;
+  }
+  .new .newcol2 p {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+  .new .newcol2 a {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .map {
+    width: 100%;
+    margin-top: 10px;
+  }
+  footer .endcol {
+    width: 100%;
+    color: white;
+    margin-bottom: 60px;
+  }
+  footer .endcol h6 {
+    padding-left: 10px;
+  }
+  footer .endcol li {
+    padding-left: 10px;
+  }
+  footer .endcol .suptext p {
+    padding-left: 10px;
+  }
+  .join1 {
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 15px 30px;
+  }
+  .home2 {
+    height: 300px;
+  }
+  .home2text h1 {
+    font-size: 40px;
+  }
+  .help .helpcol5 {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .help .helppro {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .help .helppro p {
+    font-size: 15px;
+    padding-bottom: 8px;
+  }
+  .help .helppro h4 {
+    font-size: 25px;
+  }
+  .pact .pactrow {
+    padding: 10px 0px;
+  }
+  .pact .pactcol {
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  .pact .pactrow .pactcol1 {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .pact .pactrow .pactcol .pactcall h3 {
+    padding-top: 30px;
+    padding-bottom: 18px;
+    padding-left: 15px;
+    font-size: 18px;
+  }
+  .pact .pactrow p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 10px;
+    line-height: 1.5;
+  }
+  .tr a {
+    padding-left: 15px;
+    margin-right: 0px;
+    font-size: 13px;
+  }
+  .pact .pactcol .pactbtn {
+    margin-left: 10px;
+    padding: 20px 5px;
+    font-size: 15px;
+  }
+  .pact .pactcol1 .search1 input {
+    margin-left: 0px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    padding: 15px 5px;
+  }
+  .pact .pactcol1 .search1 {
+    padding: 15px 10px;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol1 .search1 .Search {
+    padding: 15px 19px;
+  }
+  .det {
+    margin-top: 10px;
+    padding: 20px 0px;
+  }
+  .det h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+  }
+  .det ul {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 3.3;
+    margin-bottom: 30px;
+    margin-left: 15px;
+  }
+  .pact .pactcol1 .post {
+    padding: 10px 0px;
+  }
+  .pact .pactcol1 .post .postimg {
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  .pact .pactcol1 .post h6 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    margin-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+  .pact .pactcol1 .post .post2 a {
+    padding-right: 0px;
+    margin-left: 10px;
+  }
+  .pact .pactcol1 .btr {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+  }
+  .pact .pactcol1 .btr a {
+    font-size: 12px;
+    padding: 10px 10px;
+    margin-left: 3px;
+  }
+  .pact .pactcol1 .psot {
+    padding: 0px 10px;
+  }
+  .pact .pactcol h4 {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+  .pact .pactcol .plac1 p {
+    padding: 20px 10px;
+    margin-top: 10px;
+    line-height: 1.8;
+  }
+  .pact .pactcol .pactphoto .tr a {
+    margin-left: 5px;
+  }
+  .pact .pactcol .likerow {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol .likerow1 {
+    padding-bottom: 40px;
+  }
+  .pact .pactcol .likerow1 .likecol3 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  .pact .pactcol .likerow1 .likecol3 .photo {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .pact .pactcol .likerow1 .likecol3 h6 {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .pact .pactcol .have {
+    padding: 10px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol .outrow {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 20px;
+  }
+  .pact .pactcol .have .outrow .outtext {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .pact .pactcol .outrow h3 {
+    font-size: 19px;
+    cursor: pointer;
+  }
+  .pact .pactcol .outrow p {
+    padding-bottom: 5px;
+    font-size: 14px;
+  }
+  .pact .pactcol .outrow .outimg {
+    padding-top: 50px;
+  }
+  .pact .pactcol .have2 .outtext2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .pact .pactcol .have2 .outtext5 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  form textarea {
+    width: 100%;
+  }
+  form input {
+    width: 100%;
+    padding: 15px 20px;
+  }
+  form .web input {
+    width: 100%;
+    margin: 20px 0;
+  }
+  form {
+    margin-left: 5px;
+    margin-bottom: 50px;
+  }
+  .pact .pactcol .leavetext h4 {
+    margin-left: 5px;
+  }
+  .touch .touchrow {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px 0px;
+  }
+  .touch .touchrow .touchcol {
+    width: 100%;
+    padding-right: 5px;
+  }
+  .touch .touchrow .touchcol1 {
+    width: 100%;
+    padding-left: 5px;
+  }
+  .touch .touchrow .touchcol1 .media {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 0;
+  }
+  .touch .touchrow .touchcol1 .media .media1 ul span {
+    font-size: 25px;
+  }
+  .touch .touchrow .touchcol1 .media .media1 ul h6 {
+    font-size: 17px;
+  }
+  .touch .touchrow .touchcol1 .media .media1 ul p {
+    font-size: 14px;
+  }
+  .touch .tectext {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
